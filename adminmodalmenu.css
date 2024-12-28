@@ -1,0 +1,190 @@
+/* modalstyle.css */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 12px;
+}
+
+/* ADD MOTOR */
+#addMotorcycleForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#addMotorcycleForm div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#addMotorcycleForm input{
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#addMotorcycleForm button{
+    width: 90%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#addMotorcycleForm button:hover{
+    background-color: #45a049;
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* EDIT MOTOR */
+#updateMotorForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#updateMotorForm div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#updateMotorForm input{
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#updateMotorForm #motorSelect {
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#updateMotorForm input[type="submit"]{
+    width: 90%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#updateMotorForm input[type="submit"]:hover{
+    background-color: #45a049;
+    
+}
+
+.closee {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closee:hover,
+.closee:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* DELETE MOTOR */
+#deleteMotorForm {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#deleteMotorForm div{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#deleteMotorForm select{
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+#deleteMotorForm input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#deleteMotorForm input[type="submit"]:hover{
+    background-color: #45a049;
+    
+}
+
+.closeee {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeee:hover,
+.closeee:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+

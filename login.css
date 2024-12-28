@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fffff2;
+}
+
+.container {
+    width: 100%;
+    padding-top: 8rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 6rem;
+    background-color: #fffff2;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* HAMBURGER MENU */
+.navbar .openMenu {
+    font-size: 1.5rem;
+    display: none;
+    cursor:  pointer;
+    margin-right: 2rem;
+}
+
+.navbar .navi .closeMenu , .icons i {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#BSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.fa-facebook:hover {color: rgb(0, 110, 225);}
+.fa-instagram:hover {color: rgb(225, 0, 56);}
+.fa-github:hover {color: rgb(0, 255, 115);}
+.fa-telegram:hover {color: rgb(255, 228, 72);}
+
+
+
+/* NAVIGATION VISITED */
+.logIn {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav {
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: 0.09s;
+}
+
+#nav:hover {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav:active {
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+/*LOGIN FORM*/
+.regp {
+    padding-bottom: 10px;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.containlog {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ededed ;
+    border-radius: 10px;
+    width: 400px;
+    margin: 30px auto;
+    padding: 1rem;
+    box-shadow: 2px 2px 10px;
+}
+
+/*LOGIN EMAIL*/
+.logemailrow {
+    padding: 0.5rem ;
+}
+
+.emaillog {
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+.logemailinput {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 360px;
+}
+
+/*LOGIN PASSWORD*/
+.logpassrow {
+    padding: 0.5rem ;
+}
+
+.passlog {
+    font-family: monospace;
+    font-weight: 600;
+    font-size: 1.3em;
+    margin: 5px;
+}
+
+.logpassinput {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 360px;
+}
+
+/*FORGOT PASSWORD*/
+.forgot {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
+}
+
+.forgot {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+
+.forgotlink {
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.forgotlink:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.forgotlink:active {
+    font-size: 0.9em;
+    opacity: 0.5;
+}
+
+/*CREATEBTN and LOGINBTN*/
+#crtbtn {
+    display: flex;
+    margin: 10px auto;
+    padding: 0.7rem 5rem;
+    border-style: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px;
+    font-family: verdana;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    background-color: #00ff73;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+#crtbtn:hover {
+    background-color:#783eff;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+#crtbtn:active {
+    letter-spacing: 0.2em;
+    font-size: 0.9em;
+    opacity: 0.5;
+    box-shadow: 0 0 10px 2px black;
+}
+
+/*DON'T and HAVE ACCOUNT*/
+#have {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin-top: 20px;
+}
+
+.have {
+    font-family: sans-serif;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 4px;
+    margin-bottom: 3px;
+}
+
+.hvlink {
+    text-decoration: none;
+    transition: 0.15s;
+}
+
+.hvlink:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+.hvlink:active {
+    font-size: 0.9em;
+    opacity: 0.5;
+}
+
+/*CONTENT4*/
+.content4 {
+    width: 100%;
+    background-color: dimgray;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#pic {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+#pic:hover {
+    scale: 1.1;
+    width: 300px;
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 20px;
+}
+
+footer p {
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.navig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#nag {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.09s;
+}
+
+#nag:hover {
+    text-shadow: 0 0 10px yellow;
+}
+
+#FBSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    
+    /* NAVBAR */
+    #BSMLogo {
+        margin-left: 2rem;
+    }
+
+    .navbar .navi {
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        transition: 1s ease;
+        display: none;
+        color: white;
+    }
+
+    .navi #nav {
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .navi #nav:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .navbar .navi .closeMenu {
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .navbar .openMenu {
+        display: block;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+
+}

@@ -1,0 +1,78 @@
+/* Payment Method Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+}
+
+#paymentForm {
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 0 white;
+    display: flex;
+    flex-direction: column;
+}
+
+#paymentForm #pay {
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+}
+
+#paymentForm #chck {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+/* Close button style */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Submit button style */
+.modal-content button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.modal-content button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Terms and conditions checkbox style */
+.modal-content input[type="checkbox"] {
+    margin-top: 10px;
+}

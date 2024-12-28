@@ -1,0 +1,523 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fffff2;
+}
+
+.container {
+    padding-top: 7rem;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 6rem;
+    background-color: #fffff2;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* HAMBURGER MENU */
+.navbar .openMenu {
+    font-size: 1.5rem;
+    display: none;
+    cursor:  pointer;
+    margin-right: 2rem;
+}
+
+.navbar .navi .closeMenu , .icons i {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#BSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.fa-facebook:hover {color: rgb(0, 110, 225);}
+.fa-instagram:hover {color: rgb(225, 0, 56);}
+.fa-github:hover {color: rgb(0, 255, 115);}
+.fa-telegram:hover {color: rgb(255, 228, 72);}
+
+
+/* NAVIGATION VISITED */
+.motorcycles {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav {
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: 0.09s;
+}
+
+#nav:hover {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav:active {
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+.vertical {
+    margin: 0 1.5rem;
+    opacity: 0;
+}
+
+.logged-in .vertical {
+    opacity: 1;
+}
+
+/* XSLT FILE CSS */
+h1 {
+    text-align: center;
+    font-family: Georgia;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    transition: opacity 0.5s ease;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+.product img:hover {
+    transform: translateY(-15px);
+    filter: drop-shadow(0 5px 5px #000000);
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.product .nm{
+    margin: 0;
+    font-family: Courier;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.product .pcc {
+    font-size: 0.9em;
+    text-align: justify;
+    font-family: sans-serif;
+    height: 98px;
+    overflow: hidden;
+}
+
+.product .pc{
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.product .av{
+    margin: 0;
+    font-family: monospace;
+    font-size: 1em;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #a3a3a3;
+}
+
+/* BUTTON WITH ARROW */
+.button {
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ffa2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+  
+.button:hover span {
+    color: white;
+    font-weight: bolder;
+    padding-right: 25px;
+}
+
+.button:hover {
+    background-color: #ff2929;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*CONTENT2 SEARCH*/
+.content2 {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#BSMLogoo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#verti {
+    height: 100px;
+    width: 2px;
+    background-color: #6b6b6b;
+    margin: 0 1rem;
+}
+
+.searchbar {
+    width: 70%;
+    margin: auto;
+    padding: 1.5rem 0;
+    box-shadow: 0 0 5px 1px black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+}
+
+.serc {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sercicon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    cursor: pointer;
+    border: 2px solid #6b6b6b;
+    height: 2.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right-style: none;
+    transition: 0.5s;
+}
+
+#sercicon:hover {
+    background-color: #ff2929;
+    color: white;
+}
+
+#Search{
+    width: 30rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    border-style: solid;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: #6b6b6b;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+.soti {
+    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 33.7rem;
+}
+.soti div {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.soti .sor-brand {
+    width: 200px;
+    height: 2.5rem;
+    border: 2px solid #6b6b6b;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.soti #brand {
+    border: 2px solid black;
+}
+
+.aud {
+    width: 40%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.audBtn {
+    padding: 0 10px;
+    width: 150px;
+    height: 5.5rem;
+    border: 2px solid #6b6b6b;
+    border-radius: 10px;
+    font-size: 0.9em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+}
+
+.audBtn:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.audBtn:active {
+    opacity: 0.4;
+}
+
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px),(max-width: 1200px) {
+
+    .searchbar {
+        flex-direction: column;
+    }
+
+    #Search {
+        width: 50%;
+    }
+
+    .soti {
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+    .soti div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    #verti {
+        display: none;
+    }
+}
+
+/*CONTENT4*/
+.content4 {
+    width: 100%;
+    background-color: dimgray;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#pic {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+#pic:hover {
+    scale: 1.1;
+    width: 300px;
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 20px;
+}
+
+footer p {
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+.navig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#nag {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.09s;
+}
+
+#nag:hover {
+    text-shadow: 0 0 10px yellow;
+}
+
+#FBSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+
+    #BSMLogo {
+        margin-left: 2rem;
+    }
+
+    .navbar .navi {
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        transition: 1s ease;
+        display: none;
+        color: white;
+    }
+
+    .navi #nav {
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .navi #nav:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .navbar .navi .closeMenu {
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .navbar .openMenu {
+        display: block;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    #pic:hover {
+        width: 200px;
+        height: 200px;
+    }
+
+}

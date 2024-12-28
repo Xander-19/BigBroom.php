@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="menupage.xslt"?>
+<?xml-stylesheet type="text/xsl" href="homepage.xslt"?>
+<motorcycles>
+    <motorcycle>
+        <path>img/Kawasaki_ZX-10RR.png</path>
+        <alteration>Kawasaki ZX-10RR</alteration>
+        <name>Kawasaki ZX-10RR</name>
+        <brand>Kawasaki</brand>
+        <description>The Ninja® ZX™-10R supersport bike is the direct result of decades of world-class road racing innovation. Our experience on the track has led to a potent 998cc four-cylinder engine.</description>
+        <price>1,550,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Kawasaki_Z1000R.png</path>
+        <alteration>Kawasaki_Z1000R</alteration>
+        <name>Kawasaki Z1000R</name>
+        <brand>Kawasaki</brand>
+        <description>The Z1000 R Edition is powered by a 1043 cc engine, and has a 6-Speed gearbox. The Z1000 R Edition comes with Dual Disc front brakes and Disc rear brakes along with ABS.</description>
+        <price>710,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Kawasaki_Ninja_1000.png</path>
+        <alteration>Kawasaki_Ninja_1000</alteration>
+        <name>Kawasaki Ninja 1000</name>
+        <brand>Kawasaki</brand>
+        <description> The Ninja 1000 is powered by a 1043 cc engine, and has a 6-Speed gearbox. The Ninja 1000 comes with Dual Disc front brakes and Disc rear brakes along with ABS.</description>
+        <price>718,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Yamaha_R1.png</path>
+        <alteration>Yamaha YZF R1</alteration>
+        <name>Yamaha YZF R1</name>
+        <brand>Yamaha</brand>
+        <description>The YZF-R1 is forged from the technology and development gained from countless racetrack challenges, Yamaha's historical achievements have become the future of R World.</description>
+        <price>1,099,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Yamaha-MT-10-SP.png</path>
+        <alteration>Yamaha-MT-10-SP</alteration>
+        <name>Yamaha MT-10 SP</name>
+        <brand>Yamaha</brand>
+        <description>The MT-10 SP is powered by a 998 cc engine, and has a 6-Speed gearbox. The MT-10 SP comes with Dual Disc front brakes and Disc rear brakes along with ABS.</description>
+        <price>1,099,999</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Yamaha_R6_RACE.png</path>
+        <alteration>Yamaha YZF R6 RACE</alteration>
+        <name>Yamaha YZF R6 RACE</name>
+        <brand>Yamaha</brand>
+        <description>This is the ultimate 600cc Supersport bike that has been dominating WorldSSP racing for years. Like every R-Series it has been developed to achieve the highest levels of performance.</description>
+        <price>749,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Yamaha_YZF_R6.png</path>
+        <alteration>Yamaha YZF R6 2008</alteration>
+        <name>Yamaha YZF R6 2008</name>
+        <brand>Yamaha</brand>
+        <description>The 2008 Yamaha YZF-R6 had at its core a 599cc four-stroke four-cylinder liquid-cooled engine that delivered an output power of 129 hp with a peak at 14,500 rpm.</description>
+        <price>547,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Ducati_Panigale_V2.png</path>
+        <alteration>Ducati Panigale V2</alteration>
+        <name>Ducati Panigale V2</name>
+        <brand>Ducati</brand>
+        <description>The Ducati Panigale V2 is one of the brand's entries to the super sport bike segment, and this model is designed and engineered with one goal in mind which is to go as fast as possible.</description>
+        <price>1,150,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Ducati_SuperSport_950.png</path>
+        <alteration>Ducati SuperSport 950</alteration>
+        <name>Ducati SuperSport 950</name>
+        <brand>Ducati</brand>
+        <description>The Ducati SuperSport S is a suitable everyday two-wheeler, with its blend of comfort and versatility. Locally launched last 2018, this super sport bike has a sporty yet elegant design.</description>
+        <price>1,105,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Ducati_Superleggera_V4.png</path>
+        <alteration>Ducati Superleggera V4</alteration>
+        <name>Ducati Superleggera V4</name>
+        <brand>Ducati</brand>
+        <description>The Ducati Superleggera V4 achieves endless wonder and powerful emotions. This naked bike was born through the most innovative research on materials dynamics and engineering.</description>
+        <price>7,500,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    
+    <motorcycle>
+        <path>img/Ducati_Diavel_1260.png</path>
+        <alteration>Ducati Diavel 1260</alteration>
+        <name>Ducati Diavel 1260</name>
+        <brand>Ducati</brand>
+        <description>The Ducati Diavel 1260 delivers maximum riding enjoyment. This power cruiser has a contemporary look that's sure to turn heads.</description>
+        <price>2,205,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Honda_CBR1000RR_R.png</path>
+        <alteration>Honda CBR1000RR-R</alteration>
+        <name>Honda CBR1000RR-R</name>
+        <brand>Honda</brand>
+        <description>The CBR1000RR-R Fireblade SP is their fiercest creation that carries the true spirit of its MotoGP racing DNA. Certainly, this Super Sport Bike has the pace and spec to back up that claim.</description>
+        <price>1,500,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Honda_CB1000R.png</path>
+        <alteration>Honda CB1000R</alteration>
+        <name>Honda CB1000R</name>
+        <brand>Honda</brand>
+        <description>The CB1000R stands out with its cafe-racer style and many more attributes. This bike is run by a 998cc, liquid-cooled, in-line four-cylinder engine that produces 144hp and 104 Nm of torque.</description>
+        <price>865,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Suzuki_Hayabusa_R1300.png</path>
+        <alteration>Suzuki Hayabusa R1300</alteration>
+        <name>Suzuki Hayabusa R1300</name>
+        <brand>Suzuki</brand>
+        <description>Excellent handling, superb engineering, smart aerodynamics, and a 300km/h-plus top speed it's no wonder that the Suzuki Hayabusa GSX-R1300 has been regarded as one of the best performance.</description>
+        <price>1,199,000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/BMW-M-1000-RR.png</path>
+        <alteration>2024 BMW S 1000 R</alteration>
+        <name>2024 BMW S 1000 R</name>
+        <brand>BMW</brand>
+        <description>This naked bike combines its aggressive design with pure riding fun. Locally, the S 1000 R is made available with only one ABS variant.</description>
+        <price>1455000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/BMW_S1000RR.png</path>
+        <alteration>2024 BMW S 1000 RR</alteration>
+        <name>2024 BMW S 1000 RR</name>
+        <brand>BMW</brand>
+        <description>The BMW S1000 RR is a motorcycle delivering sportiness with a stash of refinement. Indulge yourself with such striking looks that would surely turn lots of heads.</description>
+        <price>1575000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/GSX-S1000.png</path>
+        <alteration>2024 Suzuki GSX-S1000</alteration>
+        <name>2024 Suzuki GSX-S1000</name>
+        <brand>Suzuki</brand>
+        <description>The Suzuki GSX-S1000 is only a city slicker, you're wrong. Tucked underneath this naked bikes frame is a powerful power plant that allows it to provide great performance.</description>
+        <price>755000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    <motorcycle>
+        <path>img/Ducati_Streetfighter_V2.png</path>
+        <alteration>Ducati Streetfighter V2</alteration>
+        <name>Ducati Streetfighter V2</name>
+        <brand>Ducati</brand>
+        <description>The new Streetfighter V2 is a sports naked with a one-of-a-kind character. It accommodates the needs of those looking for a bike that can combine the sporty DNA of the Panigale V2 with both the attitude.</description>
+        <price>1415000</price>
+        <availability>Available</availability>
+    </motorcycle>
+    </motorcycles>

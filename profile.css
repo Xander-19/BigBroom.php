@@ -1,0 +1,569 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fffff2;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 6rem;
+    background-color: #fffff2;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* HAMBURGER MENU */
+.navbar .openMenu {
+    font-size: 1.5rem;
+    display: none;
+    cursor:  pointer;
+    margin-right: 2rem;
+}
+
+.navbar .navi .closeMenu , .icons i {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#BSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.fa-facebook:hover {color: rgb(0, 110, 225);}
+.fa-instagram:hover {color: rgb(225, 0, 56);}
+.fa-github:hover {color: rgb(0, 255, 115);}
+.fa-telegram:hover {color: rgb(255, 228, 72);}
+
+/* NAVIGATION VISITED */
+.vertical {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav {
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: 0.09s;
+}
+
+#nav:hover {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav:active {
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+.vertical {
+    margin: 0 1.5rem;
+    opacity: 0;
+}
+
+.logged-in .vertical {
+    opacity: 1;
+}
+
+/*CONTENT1*/
+.content1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 7rem;
+}
+
+/* Profile Picturer */
+.profileDetails {
+    height: 70vh;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.DpPicture {
+    border: 2px solid black;
+    margin-bottom: 1rem;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.userNmCb {
+    display: flex;
+    flex-direction: column;
+}
+
+.userNmCb h2 {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#editlogout {
+    margin: 5rem 0;
+}
+
+/* EDIT BUTTON */
+#editlogout #editBtn {
+    padding: 10px;
+    background-color: #00ffa2;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.15s all;
+}
+
+#editlogout #editBtn:hover {
+    font-weight: 600;
+}
+
+#editlogout #editBtn:active {
+    opacity: 0.5;
+}
+
+/* LOGOUT BUTTOn */
+#editlogout #logOutBtn {
+    padding: 10px;
+    background-color: #ff2929;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid black;
+    cursor: pointer;
+    transition: 0.15s all;
+}
+
+#editlogout #logOutBtn:hover {
+    font-weight: 600;
+}
+
+#editlogout #logOutBtn:active {
+    opacity: 0.5;
+}
+
+/*CONTENT2*/
+.content2 {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+/* MESSAGE BOX */
+.messageBox {
+    width: 100%;
+    height: auto;
+    background-color: #ffffcf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageBox .messageDiv {
+    background-color: #747474;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    width: 40%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.messageDiv h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mess {
+    width: 70%;
+    padding: 10px;
+    font-size: 1em;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.msg {
+    width: 70%;
+    height: 8rem;
+    padding: 10px;
+    font-size: 1em;
+    font-family: sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#messageSubmit {
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    border-style: none;
+    font-size: 1.2em;
+    font-family: Courier;
+    background-color: #000;
+    color: white;
+    transition: 0.5s;
+}
+
+#messageSubmit:active {
+    opacity: 0.5;
+}
+
+/* XSLT FILE CSS & CONTENT2*/
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content3 {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.seemor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* BUTTON WITH ARROW */
+.seem {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #000;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: white;
+    transition: all 0.5s;
+}
+  
+.seem span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.seem span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+  
+.seem:hover span {
+    color: white;
+    font-weight: bolder;
+    padding-right: 25px;
+}
+
+.seem:active {
+    opacity: 0.5;
+}
+  
+.seem:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* PRODUCT & CONTENT2 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    transition: opacity 0.5s ease;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+#picc:hover {
+    transform: translateY(-15px);
+    filter: drop-shadow(0 5px 5px #000000);
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.product .nm{
+    margin: 0;
+    font-family: Courier;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.product .pc{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* BUTTON WITH ARROW */
+.button {
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ffa2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+  
+.button:hover span {
+    color: white;
+    font-weight: bolder;
+    padding-right: 25px;
+}
+
+.button:hover {
+    background-color: #ff2929;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*CONTENT4*/
+.content4 {
+    width: 100%;
+    background-color: dimgray;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#pic {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+#pic:hover {
+    scale: 1.1;
+    width: 300px;
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 20px;
+}
+
+footer p {
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+.navig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#nag {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.09s;
+}
+
+#nag:hover {
+    text-shadow: 0 0 10px yellow;
+}
+
+#FBSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    
+    /* NAVBAR */
+    #BSMLogo {
+        margin-left: 2rem;
+    }
+
+    .navbar .navi {
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        transition: 1s ease;
+        display: none;
+        color: white;
+    }
+
+    /* FONT VISITED */
+    .navi #nav {
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .navi #nav:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .navbar .navi .closeMenu {
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .navbar .openMenu {
+        display: block;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+
+    /* MESSAGE BOX */
+    .messageBox {
+        height: 80vh;
+    }
+
+    .messageBox .messageDiv {
+        width: 70%;
+    }
+
+    /* CONTENT3 */
+    .content3 {
+        width: 100%;
+        align-items: center;
+    }
+
+    /* GAllery */
+    #pic:hover {
+        width: 200px;
+        height: 200px;
+    }
+}

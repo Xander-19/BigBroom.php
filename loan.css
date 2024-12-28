@@ -1,0 +1,723 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fffff2;
+}
+
+.container {
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    height: 6rem;
+    background-color: #fffff2;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+    transition: opacity 0.5s ease;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* HAMBURGER MENU */
+.navbar .openMenu {
+    font-size: 1.5rem;
+    display: none;
+    cursor:  pointer;
+    margin-right: 2rem;
+}
+
+.navbar .navi .closeMenu , .icons i {
+    font-size: 1.5rem;
+    display: none;
+    cursor: pointer;
+    
+}
+
+#BSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+.navi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.fa-facebook:hover {color: rgb(0, 110, 225);}
+.fa-instagram:hover {color: rgb(225, 0, 56);}
+.fa-github:hover {color: rgb(0, 255, 115);}
+.fa-telegram:hover {color: rgb(255, 228, 72);}
+
+
+
+/* NAVIGATION VISITED */
+.loan {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav {
+    color: black;
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 0 5px;
+    transition: 0.09s;
+}
+
+#nav:hover {
+    border-bottom: 2px solid black;
+    font-weight: 700;
+}
+
+#nav:active {
+    letter-spacing: 3px;
+    opacity: 0.5;
+}
+
+.vertical {
+    margin: 0 1.5rem;
+    opacity: 0;
+}
+
+.logged-in .vertical {
+    opacity: 1;
+}
+
+/* CONTENT1 FORM */
+.content1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Tagline */
+#quodiv {
+    background-image: url("img/kawasaki-z1000r.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    width: 100%;
+    height: 400px;
+}
+
+.qout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000000a8;
+    width: 100%;
+    height: 400px;
+}
+
+.qout h2 {
+    width: calc(100% - 9rem);
+    font-family: Tahoma;
+    color: #ff2929;
+    font-size: calc(3em + 0.1vw);
+    margin-top: 2rem;
+    text-shadow: -2px 2px 1px rgb(255, 255, 255);
+    text-align: center;
+}
+
+.qout p {
+    width: calc(60% - 8rem);
+    background-color: white;
+    font-family: Tahoma;
+    font-weight: 700;
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* FORM */
+form {
+    width: 65%;
+    margin: 2rem 0;
+    border-radius: 8px;
+    background-color: #17003186;
+    box-shadow: 0 0 10px 3px #ccc;
+}
+
+form .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #170031;
+    color: white;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.loan-cash {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3rem;
+}
+
+#FormLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.formFillUp {
+    padding: 0 1rem;
+}
+
+.aste {
+    color: red;
+    padding: 3px;
+}
+
+/* MOTOR UNIT */
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.section .lblTxt {
+    font-family: Tahoma;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.section .inputtxt {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 280px;
+}
+
+/* FULLNAME */
+.section .Fname {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 275px;
+}
+
+/* BDAY/STATUS */
+.civil {
+    display: flex;
+    flex-direction: column;
+}
+
+.civil div {
+    display: flex;
+    gap: 1rem;
+}
+
+.section .bday-age {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 330px;
+}
+
+/* ADDRESS */
+.section1 {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section1 .lblTxt {
+    font-family: Tahoma;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+
+.section1 .Address {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 900px;
+}
+
+/* CONTACT */
+.section .contact {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border-style: solid;
+    border-radius: 8px;
+    width: 430px;
+}
+
+/* IDss */
+.section .picid {
+    font-family: sans-serif;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px #ccc;
+    border-style: solid;
+    border-radius: 8px;
+    width: 430px;
+}
+
+/* BUTTON SUBMIT */
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+/* BUTTON WITH ARROW */
+.sub {
+    width: 50%;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border-style: none;
+    background-color: #000;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: white;
+    transition: all 0.5s;
+}
+  
+.sub span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.sub span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+  
+.sub:hover span {
+    color: white;
+    font-weight: bolder;
+    padding-right: 25px;
+}
+
+.sub:active {
+    opacity: 0.5;
+}
+  
+.sub:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* ERROR */
+.error {
+    border: 2px solid red;
+}
+
+
+/* XSLT FILE CSS & CONTENT2*/
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content2 {
+    width: 100%;
+}
+
+.seemor {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+/* BUTTON WITH ARROW */
+.seem {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #000;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1em;
+    color: white;
+    transition: all 0.5s;
+}
+  
+.seem span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.seem span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+  
+.seem:hover span {
+    color: white;
+    font-weight: bolder;
+    padding-right: 25px;
+}
+
+.seem:active {
+    opacity: 0.5;
+}
+  
+.seem:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* PRODUCT & CONTENT2 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    transition: opacity 0.5s ease;
+}
+
+.product img {
+    width: 300px;
+    height: 200px;
+    transition: 0.3s;
+}
+
+#picc:hover {
+    transform: translateY(-15px);
+    filter: drop-shadow(0 5px 5px #000000);
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+    margin: 1.5rem 0;
+}
+
+.product .nm{
+    margin: 0;
+    font-family: Courier;
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.product .pc{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* BUTTON WITH ARROW */
+.button {
+    width: 13rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00ffa2;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+  
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.3s;
+}
+  
+.button:hover span {
+    color: white;
+    font-weight: bolder;
+    padding-right: 25px;
+}
+
+.button:hover {
+    background-color: #ff2929;
+}
+
+.button:active {
+    opacity: 0.5;
+}
+  
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/*CONTENT4*/
+.content3 {
+    width: 100%;
+    background-color: dimgray;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+#pic {
+    width: 200px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+#pic:hover {
+    scale: 1.1;
+    width: 300px;
+    height: 200px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    padding: 1rem 0;
+    gap: 20px;
+}
+
+footer p {
+    color: whitesmoke;
+    font-family: monospace;
+    font-size: 0.9em;
+}
+
+.navig {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+#nag {
+    color: whitesmoke;
+    font-family: sans-serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    transition: 0.09s;
+}
+
+#nag:hover {
+    text-shadow: 0 0 10px yellow;
+}
+
+#FBSMLogo {
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px) {
+    
+    /* NAVBAR */
+    #BSMLogo {
+        margin-left: 2rem;
+    }
+
+    .navbar .navi {
+        height: 80vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #000000;
+        transition: 1s ease;
+        display: none;
+        color: white;
+    }
+
+    .navi #nav {
+        color: white;
+        font-size: 1.2em;
+    }
+
+    .navi #nav:hover {
+        border-bottom: 2px solid white;
+    }
+
+    .navbar .navi .closeMenu {
+        display: block;
+        position: absolute;
+        top: 32px;
+        right: 32px;
+    }
+
+    .navbar .openMenu {
+        display: block;
+    }
+
+    .icons i {
+        display: inline-block;
+        padding: 12px;
+    }
+    
+    /* Gallery */
+    #pic:hover {
+        width: 200px;
+        height: 200px;
+
+    }
+
+    .qout h2 {
+        font-size: 2.5em;
+    }
+
+    /* FORM */
+    form .content {
+        flex-direction: column-reverse;
+    }
+
+    .formLogo {
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    #FormLogo {
+        margin: 0 auto;
+    }
+    
+    .section {
+        flex-direction: column;
+        width: 93%;
+        gap: 10px;
+    }
+
+    .section1 {
+        flex-direction: column;
+        width: 93%;
+        gap: 10px;
+    }
+
+    .section .inputtxt {
+        width: 95%;
+    }
+
+    .section .Fname {
+        width: 95%;
+    }
+
+    .section .bday-age {
+        width: 95%;
+    }
+
+    .section1 .Address {
+        width: 95%;
+    }
+
+    .section .contact {
+        width: 95%;
+    }
+
+    .section .picid {
+        width: 95%;
+    }
+
+
+}

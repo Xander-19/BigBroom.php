@@ -1,0 +1,27 @@
+<images>
+    <!--Image slider-->
+    <image>
+        <url>img/Kawasaki Ninja-ZX-10RR.jpg</url>
+        <alt>Kawasaki ZX-10RR</alt>
+    </image>
+    <image>
+        <url>img/kawasaki-z1000r.jpg</url>
+        <alt>kawasaki-z1000r</alt>
+    </image>
+    <image>
+        <url>img/YamahaR1.jpeg</url>
+        <alt>Yamaha R1</alt>
+    </image>
+    <image>
+        <url>img/2024-Yamaha-MT10.jpg</url>
+        <alt>Yamaha MT-10SP</alt>
+    </image>
+    <image>
+        <url>img/repsol.jpg</url>
+        <alt>Repsol</alt>
+    </image>
+    <image>
+        <url>img/Image.jpg</url>
+        <alt>Image</alt>
+    </image>
+</images>
